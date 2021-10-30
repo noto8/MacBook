@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+
+
+
+.macbook{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    *{
+        margin: 0 auto;
+    }
+
+    .screen{
+        position: relative;
+        width: 430px;
+        height: 288px;
+        border: 2px solid #bababa;
+        padding: 14px 12px 18px;
+        border-bottom: none;
+        border-top-right-radius: 14px; border-top-left-radius: 14px;
+        background: #242424;
+        div:nth-child(1){
+            display: flex;
+            height: 100%;
+            border-top-left-radius: 4px; border-top-right-radius: 4px;
+            background-image: url("./Images/1.png");
+            background-position: center;
+            background-size: cover;
+        }
+        div:nth-child(2){
+            position: absolute;
+            bottom: 0;
+            width: 380px;
+            height: 5px;
+            background: #141414;
+        }
+    }
+
+    .body-1{
+        width: 530px;
+        height: 10px;
+        background: #dadada;
+        *{
+            width: 75px;
+            height: 6px;
+            background: #bfbfbf;
+            border-bottom-left-radius: 6px; border-bottom-right-radius: 6px;
+        }
+    }
+
+    .body-2{
+        overflow: hidden;
+        position: relative;
+        width: 530px;
+        height: 5px;
+        *{
+            position: absolute;
+            top: -5px;
+            width: 36px;
+            height: 10px;
+            background: #c5c5c5;
+        }
+        div:nth-child(1){
+            position: static;
+            width: 494px;
+        }
+        div:nth-child(2){
+            border-bottom-left-radius: 50%;
+        }
+        div:nth-child(3){
+            right: 0;
+            border-bottom-right-radius: 50%;
+        }
+    }
+}
